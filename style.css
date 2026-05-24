@@ -1,0 +1,78 @@
+@font-face {
+    font-family:'Fast and furious';
+    src: url(fuente/Antique\ Olive\ Std\ Nord\ Italic.otf);
+}
+
+@font-face {
+    font-family:'Bebas Neue';
+    src: url(fuente/Bebas\ Neue\ Regular.ttf);
+}
+
+@font-face {
+    font-family:'Montserrat';
+    src: url(fuente/Montserrat\ SemiBold.ttf);
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    background-color:rgb(0, 0, 0);
+}
+
+header{
+    top: 0;
+    display: flex;
+    gap: 8cm;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 10px 50px;
+    width: 100%;
+    z-index: 100;
+}
+
+.img_logo {
+    width: 200px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+}
+.nav a{
+    font-family:'Fast and Furious', sans-serif;
+    color: rgb(253, 46, 167);
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.Three{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.marco{
+    border: solid;
+    border-color: rgb(253, 46, 167); 
+    overflow: hidden;
+}
+
+.marco img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.marco:nth-child(1) { width: 260px; height: 300px; }
+.marco:nth-child(2) { width: 300px; height: 400px; }
+.marco:nth-child(3) { width: 300px; height: 500px; }
