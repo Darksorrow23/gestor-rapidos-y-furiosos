@@ -4,13 +4,8 @@
 }
 
 @font-face {
-    font-family:'Bebas Neue';
-    src: url(fuente/Bebas\ Neue\ Regular.ttf);
-}
-
-@font-face {
-    font-family:'Montserrat';
-    src: url(fuente/Montserrat\ SemiBold.ttf);
+    font-family:'Rajdani';
+    src: url(fuente/rajdhani.medium.ttf);
 }
 
 * {
@@ -45,11 +40,33 @@ header{
     display: flex;
 }
 .nav a{
-    font-family:'Fast and Furious', sans-serif;
+    position: relative;
+    font-family:'Rajdani', sans-serif;
+    font-style:italic
+    cursor: pointer;
     color: rgb(253, 46, 167);
     text-decoration: none;
-    margin-left: 40px;
-    font-size: 15px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color:rgb(253, 46, 167) ;
+    font-family:'Rajdani', sans-serif;
+    transform: scaleX(0);
+    transform-origin: left ;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 8px rgb(253, 46, 167);
+}
+
+.nav a:hover::after{
+    transform: scaleX(1);
 }
 
 .Three{
